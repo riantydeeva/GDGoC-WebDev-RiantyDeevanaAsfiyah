@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTBK Course Registration</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header class="site-header">
+        <h1>UTBK Course Registration</h1>
+        <p class="tagline">Register for our comprehensive UTBK preparation courses.</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>About the Course</h2>
+            <p>Our UTBK preparation course covers all the essential subjects and skills needed to
+                excel in the exam. Join us to boost your confidence and improve your scores!</p>
+        </section>
+
+        <section class="card">
+            <h2>Course Packages</h2>
+            <ul>
+                <li>Basic (Rp500.000/month), benefit:
+                    <ol>
+                        <li>Access to all course PDF materials</li>
+                        <li>3 try out sessions and explanation keys</li>
+                    </ol>
+                </li>
+                <li>Advanced (Rp1.000.000/month), benefit:
+                    <ol>
+                        <li>Access to all course PDF and video materials</li>
+                        <li>6 try out sessions and explanation keys</li>
+                        <li>Weekly online discussion sessions with expert instructors</li>
+                    </ol>
+                </li>
+                <li>Premium (Rp2.000.000/month), benefit:
+                    <ol>
+                        <li>Access to all course PDF and video materials</li>
+                        <li>Interactive class learning by instructors with proven track record</li>
+                        <li>10 try out sessions and explanation keys</li>
+                        <li>Weekly online discussion sessions with expert instructors</li>
+                        <li>Personalized study plan and progress tracking</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Course Registration</h2>
+            <form id="registration-form" class="form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="tel">Phone Number</label>
+                    <input id="tel" name="tel" type="tel" placeholder="Enter your phone number" required />
+                </div>
+                <div class="form-group">
+                    <label for="package">Select Package</label>
+                    <select id="package" name="package" required>
+                        <option value="" disabled selected>Select a package</option>
+                        <option value="Basic">Basic</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-inline">
+                    <label for="agree-terms">
+                        <input id="agree-terms" name="agree-terms" type="checkbox" required />
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Register
+                </button>
+
+                <p id="error-message" class="message error"></p>
+                <p id="success-message" class="message success"></p>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Registered Students</h2>
+            <ol id="registered-list" class="registered-list">
+                <!-- Registered students will be listed here by JavaScript -->
+            </ol>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 UTBK Course Registration. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
