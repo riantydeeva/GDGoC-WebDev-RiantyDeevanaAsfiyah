@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rianty Deevana Asfiyah - Personal Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav" id="nav">
+        <nav class="nav__links" id="navLinks">
+            <a href="#home" data-nav>Home</a>
+            <a href="#about" data-nav>About</a>
+            <a href="#skills" data-nav>Skills</a>
+            <a href="#projects" data-nav>Projects</a>
+            <a href="#certificate" data-nav>Certificate</a>
+            <a href="#contact" data-nav>Contact</a>
+        </nav>
+        <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero__inner">
+            <h1 class="hero__title">
+                Hello there! <br> I'm <span class="hero__accent">Rianty Deevana Asfiyah.</span>
+            </h1>
+            <p class="hero__desc">
+                Welcome to my personal portofolio! Take a look around to see what
+                I've built, what I've learned, and how to get in touch.
+            </p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section__head reveal">
+            <h2>About Me</h2>
+        </div>
+        <div class="about__grid">
+            <div class="about__photo reveal">
+                <img src="images/profile.jpeg" alt="Rianty Deevana Asfiyah" onerror="this.parentElement.classList.add('about__photo--empty')">
+            </div>
+            <p class="about__text reveal">
+                I'm Rianty, a Computer Engineering student at Institut Teknologi
+                Sepuluh Nopember with a strong interest in technology, including
+                Internet of Things, network, and robotics. I enjoy
+                learning new things, still curious, and always open to new challenges.
+                I am committed to leveraging the latest technologies to create high-impact
+                solutions that drive innovation.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section__head reveal">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skills__grid">
+            <div class="skill-card reveal">
+                <div class="skill-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13.5 6l-3 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span class="skill-card__name">C / C++</span>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13.5 6l-3 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span class="skill-card__name">Python</span>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5c-4.5 2-7 5-7 7s2.5 5 7 7c4.5-2 7-5 7-7s-2.5-5-7-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+                </div>
+                <span class="skill-card__name">OpenCV</span>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3.5" y="5" width="17" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 9h17" stroke="currentColor" stroke-width="1.8"/><path d="M7 13.5h4M7 16h6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </div>
+                <span class="skill-card__name">HTML & CSS</span>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5c2.6 2.3 4 5.3 4 8.5s-1.4 6.2-4 8.5M12 3.5c-2.6 2.3-4 5.3-4 8.5s1.4 6.2 4 8.5M4 12h16" stroke="currentColor" stroke-width="1.8"/></svg>
+                </div>
+                <span class="skill-card__name">Next.js</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="section__head reveal">
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="projects__list">
+            <article class="project-card reveal">
+                <div class="project-card__media" data-tone="a">
+                    <img src="images/project-1.png" alt="Project Title One" onerror="this.parentElement.classList.add('project-card__media--empty')">
+                </div>
+                <div class="project-card__body">
+                    <h3>Portofolio Website</h3>
+                    <p class="project-card__desc">
+                        This portofolio is my first public acces website, built with HTML, CSS, and JavaScript.
+                        I'll develop it to be more interactive in the future.
+                    </p>
+                    <div class="project-card__tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-card__actions">
+                        <a href="#" class="btn-project">View Project <span aria-hidden="true">↗</span></a>
+                        <a href="#" class="btn-icon" aria-label="Source code">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13.5 6l-3 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card reveal">
+                <div class="project-card__media" data-tone="b">
+                    <img src="images/project-2.png" alt="Project Title Two" onerror="this.parentElement.classList.add('project-card__media--empty')">
+                </div>
+                <div class="project-card__body">
+                    <h3>Game Pemrograman Lanjut</h3>
+                    <p class="project-card__desc">
+                        This is a game I've built for my final project in the Advanced Programming course.
+                    </p>
+                    <div class="project-card__tags">
+                        <span>C++</span><span>OOP</span><span>graphics.h</span><span>Python</span><span>OpenCV</span><span>mediapipe</span><span>hand pose</span>
+                    </div>
+                    <div class="project-card__actions">
+                        <a href="https://drive.google.com/file/d/1DFkXcr4fr2gz57a2PHC3Lp9Zi0tJO2gG/view?usp=drive_link" class="btn-project">Project Demo <span aria-hidden="true">↗</span></a>
+                        <a href="#" class="btn-icon" aria-label="Source code">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13.5 6l-3 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card reveal">
+                <div class="project-card__media" data-tone="c">
+                    <img src="images/project-3.png" alt="Project Title Three" onerror="this.parentElement.classList.add('project-card__media--empty')">
+                </div>
+                <div class="project-card__body">
+                    <h3>Game Dasar Pemrograman</h3>
+                    <p class="project-card__desc">
+                        This is a game I've built for my final project in the Basic Programming course using C++ and graphics.h library.
+                    </p>
+                    <div class="project-card__tags">
+                        <span>C++</span><span>graphics.h</span>
+                    </div>
+                    <div class="project-card__actions">
+                        <a href="https://drive.google.com/file/d/1sYll4BRuWOokgfiXmJw2w258odlLKiiA/view?usp=drive_link" class="btn-project">Project Demo <span aria-hidden="true">↗</span></a>
+                        <a href="#" class="btn-icon" aria-label="Source code">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13.5 6l-3 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="certificate" id="certificate">
+        <div class="section__head reveal">
+            <h2>Certificates & Achievements</h2>
+        </div>
+        <div class="cert__list">
+            <article class="cert-card reveal">
+                <div class="cert-card__media">
+                    <img src="images/certificate-1.png" alt="Certificate Name One" onerror="this.parentElement.classList.add('cert-card__media--empty')">
+                </div>
+                <div class="cert-card__body">
+                    <h3>IRIS Internship 2025</h3>
+                    <p class="cert-card__issuer">I learned OpenCV, motion kinematics, and communicaton in robots.
+                        I also completed first final project for programming division, and second final project
+                        creating autonomous car with my group.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1SQj6Ai1Eenso3NTkcqY3tg1YxyUyVIbt/view?usp=drive_link" class="btn-project">View Certificate <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            <article class="cert-card reveal">
+                <div class="cert-card__media">
+                    <img src="images/certificate-2.jpg" alt="Certificate Name Two" onerror="this.parentElement.classList.add('cert-card__media--empty')">
+                </div>
+                <div class="cert-card__body">
+                    <h3>OSN-K Kabupaten Lamongan 2024</h3>
+                    <p class="cert-card__issuer">3rd place in the National Science Olympiad at the Lamongan regency level,
+                        and then represented Lamongan in the East Java provincial level. I learned a lot about programming and algorithms.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1juFSUlRnAo4bM2P02s0QYuM-0us2TN-p/view?usp=drive_link" class="btn-project">View Certificate <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact__inner reveal">
+            <h2>Connect With Me!</h2>
+            <div class="contact__alt">
+                <a href="mailto:riantydeevana@gmail.com">riantydeevana@gmail.com</a>
+                <div class="social">
+                    <a href="https://www.instagram.com/riantydeeva">Instagram</a>
+                    <a href="https://www.linkedin.com/in/rianty-deevana-asfiyah-866867391">LinkedIn</a>
+                    <a href="https://www.github.com/riantydeeva">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Rianty Deevana Asfiyah. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
